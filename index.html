@@ -1,11 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title></title>
+    <style>
+        .poppins-light {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+        }
+
+        .poppins-regular {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+        }
+
+        .poppins-bold {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class=" bg-[#F4F7FF] px-[140px] py-4">
+
+    <nav class="flex items-center justify-between bg-white rounded-xl border border-white ">
+
+        <div class="flex items-center pl-[24px] ">
+            <img src="./assets/logo.png" class="mr-2 ">
+            <span class="text-[35px] poppins-light">Dev</span>
+            <span class="text-[35px] poppins-bold text-[#00303C]">Board</span>
+        </div>
+
+        <div class="flex items-center pr-[24px] my-[10px]">
+            <button class="flex items-center bg-[#F4F7FF] rounded-full px-6 py-4 mr-[38px]">
+                <img src="./assets/checkbox.png" class="mr-6">
+                <span id="high-button" class="text-[32px] poppins-bold text-[#1E1E1E]">23</span>
+            </button>
+
+            <div class="bg-[#F4F7FF] rounded-full h-20 w-20 flex items-center justify-center ">
+                <img src="./assets/theme-btn.png">
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <section class="flex items-center">
+        <section class="h-[918px] w-[1146px] bg-white rounded-xl border border-white mt-[20px] px-[24px] py-[24px]">
+            <!-- check box -->
+            <div class="flex items-center justify-between ">
+                <div
+                    class="h-[128px] w-[263px] border bg-[#F4F7FF] rounded-[12px] px-[32px] py-[32px] flex items-center border-0">
+                    <div class="bg-[#FFFFFF] rounded-full h-[64px] w-[64px]  flex items-center justify-center">
+                        <img src="./assets/checkbox.png">
+                    </div>
+                    <div class="ml-[20px]">
+                        <div class="">
+                            <p class="text-[16px] font-medium text-[#00303C] opacity-[80%] tracking-[0.003em]">Task
+                                Assigned
+                            </p>
+                        </div>
+                        <div class="">
+                            <p id="Low-button" class="text-[32px] poppins-bold text-[#00303C]">6</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- check end  -->
+                <!-- grradient  -->
+                <div
+                    class="h-[128px] w-[524px] bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl ml-[24px] mr-[24px] ">
+                    <div class="flex items-center">
+                        <img src="./assets/board.png" class="pl-[50px] mt-[20px]">
+                        <p class="ml-[22px] mt-[25px] text-[24px] font-medium text-[#FFFFFF]">Discover Something <br>New
+                            Today!</p>
+                    </div>
+                </div>
+                <!-- gradient  end -->
+                <!-- gradient  end -->
+                <div class="h-[128px] w-[263px] border bg-[#F4F7FF] rounded-[12px] flex items-center border-0">
+                    <div class="bg-[#FFFFFF] rounded-full h-[64px] w-[64px] ml-[24px] flex items-center justify-center">
+                        <img src="./assets/calender.png">
+                    </div>
+                    <div class="ml-[20px]">
+                        <div class="">
+                            <p class="text-[22px] font-medium text-[#00303C] opacity-[80%] tracking-[0.03em]">Wed <span
+                                    class="text-[22px] poppins-bold text-[#00303C]">,</span></p>
+                        </div>
+                        <div class="">
+                            <p class="text-[22px] poppins-bold text-[#00303C]">Jul 28 2025 </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- gradient  end -->
+            </div>
+
+            <!-- completed buttons -->
+            <section class="grid grid-cols-3">
+                <div class="h-[317px] w-[342px] border bg-[#F4F7FF] mt-[64px] rounded-[12px] border-none px-5 py-4">
+                    <section class="border-0">
+                        <div class="h-[40px] w-[114px]  bg-[#FFFFFF] rounded-[8px] ">
+                            <p class=" text-[16px] poppins-regular tracking-[0.03em] text-center py-2 px-4">ShopEase</p>
+                        </div>
+                        <p id="title-1" class=" mt-[24px] text-[24px] font-medium text-[#00303C]">Fix Mobile Button
+                            Issue </p>
+                        <div
+                            class=" mt-[24px] h-[92px] w-[294px] border bg-[#FFFFFF] rounded-[12px] text-[18px] opacity-[50%]  px-[16px] py-[16px]">
+                            Debug using Chrome <br> DevTools, check for overlappi...
+                        </div>
+                        <div class="flex items-center justify-between ">
+                            <div class="mt-[24px]">
+                                <p class="text-[14px] font-medium text-[#00303C] opacity-[70%] tracking-[0.03em]">
+                                    Deadline</p>
+                                <p class="text-[16px] font-medium text-[#00303C]  tracking-[0.03em]">21 March 2025</p>
+                            </div>
+
+                            <button id="completed-btn-1"
+                                class="mt-[24px] h-[44px] w-[135px] border bg-[#3752FD] text-[#FFFFFF] rounded-[8px]">Completed</button>
+
+                        </div>
+
+                    </section>
+
+                </div>
+                <!-- 2 -->
+                <div class="h-[317px] w-[342px] border bg-[#F4F7FF] mt-[64px]  rounded-[12px] border-none px-5 py-4">
+                    <section class="border-0">
+                        <div class="h-[40px] w-[114px]  bg-[#FFFFFF] rounded-[8px] ">
+                            <p class=" text-[16px] poppins-regular tracking-[0.03em] text-center py-2 px-4">ShopEase</p>
+                        </div>
+                        <p id="title-2" class=" mt-[24px] text-[24px] font-medium text-[#00303C]">Add Dark Mode</p>
+                        <div
+                            class=" mt-[24px] h-[92px] w-[294px] border bg-[#FFFFFF] rounded-[12px] text-[18px] opacity-[50%]  px-[16px] py-[16px]">
+                            Store the user's preference in <br> localStorage, update CSS vari... localStorage, update
+                            CSS vari
+                        </div>
+                        <div class="flex items-center justify-between ">
+                            <div class="mt-[24px]">
+                                <p class="text-[14px] font-medium text-[#00303C] opacity-[70%] tracking-[0.03em]">
+                                    Deadline</p>
+                                <p class="text-[16px] font-medium text-[#00303C]  tracking-[0.03em]">16 April 2025</p>
+                            </div>
+
+                            <button id="completed-btn-2"
+                                class="mt-[24px] h-[44px] w-[135px] border bg-[#3752FD] text-[#FFFFFF] rounded-[8px]">Completed</button>
+
+                        </div>
+
+                    </section>
+
+                </div>
+                <!-- 3 -->
+                <div class="h-[317px] w-[342px] border bg-[#F4F7FF] mt-[64px]  rounded-[12px] border-none px-5 py-4">
+                    <section class="border-0">
+                        <div class="h-[40px] w-[114px]  bg-[#FFFFFF] rounded-[8px] ">
+                            <p class=" text-[16px] poppins-regular tracking-[0.03em] text-center py-2 px-4">ShopEase</p>
+                        </div>
+                        <p id="title-3" class=" mt-[24px] text-[24px] font-medium text-[#00303C]">Optimize Home page 
+                        </p>
+                        <div
+                            class=" mt-[24px] h-[92px] w-[294px] border bg-[#FFFFFF] rounded-[12px] text-[18px] opacity-[50%]  px-[16px] py-[16px]">
+                            Debug using Chrome <br> DevTools, check for overlappi...
+                        </div>
+                        <div class="flex items-center justify-between ">
+                            <div class="mt-[24px]">
+                                <p class="text-[14px] font-medium text-[#00303C] opacity-[70%] tracking-[0.03em]">
+                                    Deadline</p>
+                                <p class="text-[16px] font-medium text-[#00303C]  tracking-[0.03em]">12 May 2025</p>
+                            </div>
+
+                            <button id="completed-btn-3"
+                                class="mt-[24px] h-[44px] w-[135px] border bg-[#3752FD] text-[#FFFFFF] rounded-[8px]">Completed</button>
+
+                        </div>
+
+                    </section>
+
+                </div>
+                <!-- 4 -->
+                <div class="h-[317px] w-[342px] border bg-[#F4F7FF] mt-[36px]  rounded-[12px] border-none px-5 py-4">
+                    <section class="border-0">
+                        <div class="h-[40px] w-[114px]  bg-[#FFFFFF] rounded-[8px] ">
+                            <p class=" text-[16px] poppins-regular tracking-[0.03em] text-center py-2 px-4">ShopEase</p>
+                        </div>
+                        <p id="title-4" class=" mt-[24px] text-[24px] font-medium text-[#00303C]">Add new emoji 🤲</p>
+                        <div
+                            class=" mt-[24px] h-[92px] w-[294px] border bg-[#FFFFFF] rounded-[12px] text-[18px] opacity-[50%]  px-[16px] py-[16px]">
+                            Debug using Chrome <br> DevTools, check for overlappi...
+                        </div>
+                        <div class="flex items-center justify-between ">
+                            <div class="mt-[24px]">
+                                <p class="text-[14px] font-medium text-[#00303C] opacity-[70%] tracking-[0.03em]">
+                                    Deadline</p>
+                                <p class="text-[16px] font-medium text-[#00303C]  tracking-[0.03em]">26 June 2025</p>
+                            </div>
+
+                            <button id="completed-btn-4"
+                                class="mt-[24px] h-[44px] w-[135px] border bg-[#3752FD] text-[#FFFFFF] rounded-[8px]">Completed</button>
+
+                        </div>
+
+                    </section>
+
+                </div>
+                <!-- 5 -->
+                <div class="h-[317px] w-[342px] border bg-[#F4F7FF] mt-[36px] rounded-[12px] border-none px-5 py-4">
+                    <section class="border-0">
+                        <div class="h-[40px] w-[114px]  bg-[#FFFFFF] rounded-[8px] ">
+                            <p class=" text-[16px] poppins-regular tracking-[0.03em] text-center py-2 px-4">ShopEase</p>
+                        </div>
+                        <p id="title-5" class=" mt-[24px] text-[24px] font-medium text-[#00303C]">Integrate OpenAI API
+                        </p>
+                        <div
+                            class=" mt-[24px] h-[92px] w-[294px] border bg-[#FFFFFF] rounded-[12px] text-[18px] opacity-[50%]  px-[16px] py-[16px]">
+                            Debug using Chrome <br> DevTools, check for overlappi...
+                        </div>
+                        <div class="flex items-center justify-between ">
+                            <div class="mt-[24px]">
+                                <p class="text-[14px] font-medium text-[#00303C] opacity-[70%] tracking-[0.03em]">
+                                    Deadline</p>
+                                <p class="text-[16px] font-medium text-[#00303C]  tracking-[0.03em]">18 October 2025</p>
+                            </div>
+
+                            <button id="completed-btn-5"
+                                class="mt-[24px] h-[44px] w-[135px] border bg-[#3752FD] text-[#FFFFFF] rounded-[8px]">Completed</button>
+
+                        </div>
+
+                    </section>
+
+                </div>
+                <!-- 6 -->
+                <div class="h-[317px] w-[342px] border bg-[#F4F7FF] mt-[36px] rounded-[12px] border-none px-5 py-4">
+                    <section class="border-0">
+                        <div class="h-[40px] w-[114px]  bg-[#FFFFFF] rounded-[8px] ">
+                            <p class=" text-[16px] poppins-regular tracking-[0.03em] text-center py-2 px-4">ShopEase</p>
+                        </div>
+                        <p id="title-6" class=" mt-[24px] text-[24px] font-medium text-[#00303C]">Improve Job searching
+                        </p>
+                        <div
+                            class=" mt-[24px] h-[92px] w-[294px] border bg-[#FFFFFF] rounded-[12px] text-[18px] opacity-[50%]  px-[16px] py-[16px]">
+                            Debug using Chrome <br> DevTools, check for overlappi...
+                        </div>
+                        <div class="flex items-center justify-between ">
+                            <div class="mt-[24px]">
+                                <p class="text-[14px] font-medium text-[#00303C] opacity-[70%] tracking-[0.03em]">
+                                    Deadline</p>
+                                <p class="text-[16px] font-medium text-[#00303C]  tracking-[0.03em]">25 July 2025</p>
+                            </div>
+
+                            <button id="completed-btn-6"
+                                class="mt-[24px] h-[44px] w-[135px] border bg-[#3752FD] text-[#FFFFFF] rounded-[8px]">Completed</button>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </section>
+        <div class="h-[918px] w-[450px] bg-white rounded-xl mt-[20px] ml-[24px] ">
+            <div class="flex items-center px-10 ml-[106px] mt-[24px] ">
+                <img src="./assets/activity.png">
+                <p class="text-[20px] poppins-regular ml-[17px]">Activity Log</p>
+            </div>
+            <div class="ml-[150px] mt-[15px]">
+                <button class="w-[150px] h-[44px] border bg-[#3752FD] text-[#FFFFFF] rounded-[8px] items-center"> Clear
+                    History</button>
+            </div>
+
+            <div id="task-message-box"
+                class="h-[80px] w-[370px] boder bg-[#F4F7FF] poppins-regular mt-[39px] text-[20px] px-3 py-3 ml-[31px] rounded-[8px] opacity-[70%]">
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
