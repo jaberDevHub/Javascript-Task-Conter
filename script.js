@@ -9,8 +9,6 @@ function getTaskCount() {
         document.getElementById('completed-btn-5'),
         document.getElementById('completed-btn-6')
     ];
-
-
     const taskMsgBox = document.getElementById('task-message-box');
     taskMsgBox.innerHTML = "";
 
@@ -20,7 +18,8 @@ function getTaskCount() {
     document.getElementById('high-button').parentElement.addEventListener('click', function () {
         highcount.textContent = ++numtakCount;
     });
-    completedButtons.forEach(function (button) {
+    for (let i = 0; i < completedButtons.length; i++) {
+        const button = completedButtons[i];
         button.addEventListener('click', function () {
             if (taskincrease > 0) {
                 taskincrease--;
@@ -36,13 +35,23 @@ function getTaskCount() {
                 taskTitle.textContent = "You have Completed The Task ";
 
                 taskMsgBox.appendChild(taskTitle);
-
-
-
             }
         });
+    }
+    const clearHistoryButton = document.getElementById('clearTask');
+    clearHistoryButton.addEventListener('click', function () {
+        taskMsgBox.innerHTML = "";
+        numtakCount = 23;
+        taskincrease = 6;
+        highcount.textContent = numtakCount;
+        lownumber.textContent = taskincrease;
+
+        for (let i = 0; i < completedButtons.length; i++) {
+            const button = completedButtons[i];
+            button.disabled = false;
+            button.classList.remove('bg-gray-400');
+            button.classList.add('#3752FD');
+        }
     });
-
 }
-
 getTaskCount();
