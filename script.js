@@ -9,6 +9,8 @@ function getTaskCount() {
         document.getElementById('completed-btn-5'),
         document.getElementById('completed-btn-6')
     ];
+
+
     const taskMsgBox = document.getElementById('task-message-box');
     taskMsgBox.innerHTML = "";
 
@@ -38,6 +40,7 @@ function getTaskCount() {
             }
         });
     }
+
     const clearHistoryButton = document.getElementById('clearTask');
     clearHistoryButton.addEventListener('click', function () {
         taskMsgBox.innerHTML = "";
@@ -53,5 +56,10 @@ function getTaskCount() {
             button.classList.add('#3752FD');
         }
     });
+
+
+
+
 }
+
 getTaskCount();
